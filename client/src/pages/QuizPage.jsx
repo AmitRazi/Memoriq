@@ -55,11 +55,14 @@ export const QuizPage = () => {
       </button>
       <div className="flex w-2/3 lg:w-1/3 justify-between">
         <ReplaySharpIcon
-          className={`text-gray-600 w-9 h-9 hover:text-gray-900 cursor-pointer ${
+          className={`text-gray-500 w-9 h-9 hover:text-gray-900 cursor-pointer ${
             isLoading ? "animate-spin" : ""
           }`}
           onClick={handleFetchNewQuestion}
         />
+        <p className="text-gray-600 sm:hidden">
+          Tap on the card to see the answer
+        </p>
         <p className="mb-2 text-gray-600">{`${index + 1}/${
           flashcards.length
         }`}</p>
@@ -74,7 +77,7 @@ export const QuizPage = () => {
         >
           Back
         </button>
-        <div className="flex justify-between w-1/6 h-full mt-4">
+        <div className="flex justify-evenly w-full h-full mt-6">
           <Cancel
             className={`text-red-700 w-9 h-9 hover:text-red-900 cursor-pointer`}
             onClick={() => handleMarkAnswer(index, false)}

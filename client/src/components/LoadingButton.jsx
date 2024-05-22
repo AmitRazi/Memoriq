@@ -1,6 +1,6 @@
 const LoadingButton = () => {
   return (
-    <button className="w-1/2 xl:w-1/5 bg-slate-700 text-white font-bold rounded shadow-lg py-2 px-4 mt-2 tracking-wider">
+    <button className="w-4/5 sm:w-1/2 xl:w-1/5 bg-slate-700 text-white font-bold rounded shadow-lg py-2 px-4 mt-2 tracking-wider">
       <div className="flex justify-center items-center gap-x-5">
         <svg
           className="h-5 w-5"
