@@ -43,7 +43,7 @@ export const HomePage = () => {
         below, and we'll whip up some flashcards to help you out. It's that
         simple. Make your learning a bit more fun!
       </p>
-      <div className="flex flex-col w-1/2">
+      <div className="flex flex-col w-4/5 sm:w-1/2">
         <p className="text-left text-gray-600 tracking-wide">{`${query.length}/150`}</p>
         <textarea
           value={query}
@@ -54,7 +54,7 @@ export const HomePage = () => {
       </div>
       {!isLoading && (
         <button
-          className="w-1/2 xl:w-1/5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-red-500 hover:to-pink-500 text-white font-bold rounded shadow-lg py-2 px-4 mt-2 tracking-wider"
+          className="w-4/5 sm:w-1/2 xl:w-1/5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-red-500 hover:to-pink-500 text-white font-bold rounded shadow-lg py-2 sm:px-4 mt-2 tracking-wider"
           onClick={handleGenerateFlashcards}
         >
           Generate Flashcards
