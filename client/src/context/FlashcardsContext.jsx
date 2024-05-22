@@ -14,10 +14,13 @@ const initialState = {
 
 const fetchNewQuestion = async (dispatch, query, index) => {
   try {
-    const response = await axios.post("http://localhost:5000/gemini/single", {
-      query: JSON.stringify(query),
-      question: JSON.stringify(query[index]),
-    });
+    const response = await axios.post(
+      "https://memoriq-server.vercel.app/gemini/single",
+      {
+        query: JSON.stringify(query),
+        question: JSON.stringify(query[index]),
+      }
+    );
     const newQuestion = response.data;
     dispatch({
       type: FETCH_NEW_QUESTION,
