@@ -53,14 +53,14 @@ export const QuizPage = () => {
       >
         &larr;
       </button>
-      <div className="flex w-2/3 lg:w-1/3 justify-between">
+      <div className="flex w-2/3 lg:w-1/3 justify-between ">
         <ReplaySharpIcon
           className={`text-gray-500 w-9 h-9 hover:text-gray-900 cursor-pointer ${
             isLoading ? "animate-spin" : ""
           }`}
           onClick={handleFetchNewQuestion}
         />
-        <p className="text-gray-600 sm:hidden">
+        <p className="text-gray-600 text-sm md:text-lg lg:hidden mb-2">
           Tap on the card to see the answer
         </p>
         <p className="mb-2 text-gray-600">{`${index + 1}/${
