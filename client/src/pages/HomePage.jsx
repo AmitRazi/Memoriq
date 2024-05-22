@@ -35,7 +35,7 @@ export const HomePage = () => {
 
   return (
     <section className="search-section flex flex-col w-screen justify-center items-center min-h-screen">
-      <h1 className="text-9xl font-medium text-blue-600 mb-6 -mt-32 font-mono	 border-y-2 border-blue-600 pb-3">
+      <h1 className="text-7xl sm:text-9xl sm:font-medium text-blue-600 mb-6 -mt-32 font-mono	 border-y-2 border-blue-600 pb-3">
         MEMORIQ
       </h1>
       <p className="italic text-center text-gray-700 text-lg mb-10 w-3/4 md:w-1/2">
