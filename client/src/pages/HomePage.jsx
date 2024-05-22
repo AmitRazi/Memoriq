@@ -17,6 +17,10 @@ export const HomePage = () => {
     console.log("sending");
     try {
       setLoading(true);
+      if (query === "") {
+        setLoading(false);
+        return;
+      }
       const response = await axios.post(import.meta.env.VITE_API_URL, {
         query,
       });
