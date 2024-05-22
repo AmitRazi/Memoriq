@@ -52,7 +52,6 @@ export const HomePage = () => {
           className="p-2 border border-gray-300 rounded shadow-lg mb-2 focus:outline-none h-32 resize-none tracking-wide"
         />
       </div>
-      <p>difficulty</p>
       {!isLoading && (
         <button
           className="w-1/2 xl:w-1/5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-red-500 hover:to-pink-500 text-white font-bold rounded shadow-lg py-2 px-4 mt-2 tracking-wider"
