@@ -53,7 +53,7 @@ export const QuizPage = () => {
       >
         &larr;
       </button>
-      <div className="flex w-2/3 lg:w-1/3 justify-between ">
+      <div className="flex w-4/5 lg:w-1/3 justify-between ">
         <ReplaySharpIcon
           className={`text-gray-500 w-9 h-9 hover:text-gray-900 cursor-pointer ${
             isLoading ? "animate-spin" : ""
@@ -70,7 +70,7 @@ export const QuizPage = () => {
 
       <Flashcard flashcard={flashcards[index]} />
 
-      <div className="flex justify-between w-2/3 lg:w-1/3">
+      <div className="flex justify-between w-4/5 md:w-2/3 lg:w-1/3">
         <button
           className="btn bg-blue-500 text-white rounded text-xl font-semibold shadow-md py-2 px-4 hover:bg-blue-700 l mt-4"
           onClick={handleClickBack}

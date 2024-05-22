@@ -8,7 +8,7 @@ export default function Flashcard({ flashcard }) {
 
   return (
     <div
-      className={`card ${flip ? "flip" : ""} w-2/3 lg:w-1/3 h-48 ${
+      className={`card ${flip ? "flip" : ""} w-4/5 md:w-2/3 lg:w-1/3 h-48 ${
         flashcard.isCorrect ? "border-green-500 border-2" : ""
       }`}
       onClick={() => setFlip(!flip)}
