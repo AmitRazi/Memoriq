@@ -43,7 +43,7 @@ export const HomePage = () => {
         MEMORIQ
       </h1>
       <p className="italic text-center text-gray-700 text-lg mb-10 w-3/4 md:w-1/2">
-        Hey there! Got something you need to remember? Just type it in the box
+        Hey there! Got something you need to memorize? Just type it in the box
         below, and we'll whip up some flashcards to help you out. It's that
         simple. Make your learning a bit more fun!
       </p>
